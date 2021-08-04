@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgba(242, 153, 74, 1);
+    --primary-white: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #888;
+}
+
+.container {
+    max-width: 950px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* BODY STYLING */
+
+.hero {
+    display: flex;
+    margin: 2rem 0;
+}
+.img img {
+   
+    width: 4rem;
+    
+}
+
+.image img {
+    border-radius: 10px;
+}
+
+.hero-text .para {
+    font-style: italic;
+}
+.recipe-contents h3{
+    font-style: italic;
+    font-weight: 300;
+    padding: 2rem 0;
+    text-transform: capitalize;
+}
+
+.header {
+    margin-top: 5rem;
+}
+
+.header h1 {
+    text-transform: capitalize;
+    font-size: 4vw;
+    font-family: Playfair Display, 'cursive';
+    color: #000;
+}
+
+.body-head h2 {
+    text-transform: uppercase;
+    padding-bottom: 2rem ;
+    color: #000;
+    font-family: Playfair Display;
+    font-weight: 800;
+}
+
+
+input[type="checkbox"] {
+    transform: scale(2);
+}
+
+.body-container {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.recipe-infor {
+    display: flex;
+    padding: .8rem 0;
+}
+
+.para {
+    margin-left: 2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.checkbox h4 {
+    background: var(--primary-color);
+    padding: .8rem 1.2rem;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.instructions {
+    padding: 3rem 0;
+}
+.instructions h2 {
+    text-transform: capitalize;
+    padding: 2rem 0;
+    color: #000;
+    font-family: Playfair Display;
+    font-weight: 800;
+}
+
+.tool-info {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.tool-top {
+    grid-column: span 2;
+    margin-bottom: 1rem;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(3, 80%);
+    align-items: center;
+}
+
+.orange {
+    color: var(--primary-color);
+}
+
+.too-text h6{
+    color: #999;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+.tool-box {
+    padding-bottom: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 800px) {
+    .body-container {
+       display: grid;
+       grid-template-columns: 60% 30%;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
+    .tool-info {
+        display: grid;
+        grid-template-columns: 1 100%;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        padding: 2rem 5rem;
+        align-items: center;
+        text-align: center;
+        place-items: center;
+        width: unset;
+        border-radius: 10px;
+    }
+
+.column {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-left: 55px;
+  
+}
+
+.column-left {
+     text-align: center;
+}
+
+.tool-box {
+    text-align: center;
+}
+
+.column .tool-box {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+}
+
+@media(max-width: 400px) {
+    .para {
+        font-weight: 400;
+        font-size: .8rem
+    }
+    .italics {
+        font-style: italic;
+    }
+}
